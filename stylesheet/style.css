@@ -1,0 +1,128 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    background-image: url(../images/hill.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color:cadetblue;
+    height: 100px;
+    align-items: center;
+}
+
+h1{
+    margin-left: 50px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    float: left;
+}
+
+.nav-links li{
+    margin: 5px;
+}
+
+.nav-links li a{
+    display: block;
+    padding: 25px;
+    background-color: whitesmoke;
+    text-decoration: none;
+    /* color: white; */
+}
+
+.nav-links li a:hover{
+    color: orange;
+    background-color: green;
+}
+
+.header-content{
+    color:whitesmoke;
+    font-size: 3rem;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    
+}
+
+.nav-sub-links{
+    display: none;
+}
+
+.nav-sub-link-hover:hover .nav-sub-links{
+    display: initial;
+}
+
+.nav-sub-links li{
+    list-style-type: none;
+}
+
+.nav-links li ul {
+    position: absolute;
+    top: 12%;
+    right: 14.2%;
+    color: red;
+}
+
+.line{
+    width: 150px;
+    height: 4px;
+    background-color: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+
+@media only screen and (max-width:945px){
+    
+    nav{
+        background-color: whitesmoke;
+        height: 100vh;
+    }
+    
+    .header-content{
+        font-size: 1.8rem;
+        color: skyblue;
+        position: absolute;
+        width: 100%;
+    }   
+
+    nav .nav-links{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8%;
+    }
+
+    h1{
+        position: absolute;
+        font-size: 1.6em;
+        top: 10%;
+        margin-bottom: 30px;
+    }
+
+    .nav-links li a{
+        padding: 15px;
+    }
+
+}
